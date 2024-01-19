@@ -6,9 +6,6 @@ Welcome to my personal portfolio repository! This project showcases my backgroun
 - [Introduction](#introduction)
 - [Sections](#sections)
 - [Technologies Used](#technologies-used)
-- [How to Use](#how-to-use)
-- [Contact](#contact)
-- [License](#license)
 
 ## Introduction
 
