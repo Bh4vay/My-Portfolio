@@ -38,3 +38,11 @@ ScrollReveal().reveal('.home-content, .heading',{origin:'top'});
 ScrollReveal().reveal('.home-img, .education-content,.skill-container,.project-box,.achievement-list, .contact form',{origin:'bottom'});
 ScrollReveal().reveal('.home-content h1, .about-img',{origin:'left'});
 ScrollReveal().reveal('.home-content p, .about-content',{origin:'right'});
+
+var typed = new Typed('.typo', {
+    strings: ['Coder', 'Web developer'],
+    loop:true,
+    typeSpeed: 50,
+    backSpeed:50,
+    baclDelay:1000
+  });
