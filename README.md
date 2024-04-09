@@ -28,4 +28,5 @@ This portfolio website serves as a digital resume for me, an aspiring developer 
 - JavaScript
 - [Boxicons](https://boxicons.com/) - Icon library
 - [ScrollReveal](https://scrollrevealjs.org/) - JavaScript library for scroll animations
-- [TypedJS] - JavaScript library for typing effect
+- [Typed.js](https://github.com/mattboldt/typed.js/) - JavaScript library for typing effect
+- [Tilt.js](https://raw.githubusercontent.com/micku7zu/vanilla-tilt.js/master/dist/vanilla-tilt.js) - JavaScript library for tilting effect
