@@ -25,10 +25,10 @@
 
     <!-- home -->
     <section class="home" id="home">
-        <div class="home-content">
+        <div class="home-content" id="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Bhavay Kaushal</h1>
-            <h3>And I'm a <span class="typo">B. Tech Undergrad</span></h3>
+            <h3>And I'm a <span>B. Tech Undergrad</span></h3>
             <p>Aspiring Developer</p>
             <p>"Every error is a lesson in disguise."</p>
             <div class="social-media">
@@ -223,6 +223,19 @@
     </footer>
 
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#home-content h3 span', {
+        strings: ['B. Tech Undergrad.', 'Coder.','Web Developer.'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop : true
+    });
+    </script>
+
+
+    
+
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxMlVAF-R9WmP3gZpfubG9DQUT1eU6jcdHl0Pg6LJHgIrIGoeczzLVY7QrPkCn6Tmkl/exec'
         const form = document.forms['submit-to-google-sheet']
@@ -237,7 +250,6 @@
     </script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
     <script src="scripts/tilt.js"></script>
 </body>
