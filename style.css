@@ -472,9 +472,6 @@ table{
 }
 @media screen and (max-width:768px) {
 
-    .header{
-        padding: 0;
-    }
     #menu-icon{
         display: block;
     }
