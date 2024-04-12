@@ -451,11 +451,13 @@ table{
 @media screen and (max-width:1200px) {
     html{
         font-size: 55%;
+        overflow-x: hidden;
     }
 }
 @media screen and (max-width:991px) {
     .header{
         padding: 2ren 3%;
+        overflow-x: hidden;
     }
     section{
         padding: 10rem 3% 2rem ;
@@ -536,6 +538,9 @@ table{
 
 }
 @media screen and (max-width:617px){
+    html{
+        overflow-x: hidden;
+    }
     .education-content {
         grid-template-columns:1fr;
     }
@@ -558,6 +563,7 @@ table{
 @media screen and (max-width:450px){
     html{
         font-size: 50%;
+        overflow-x: hidden;
     }
     .contact form .input-box input{
         width: 100%;
@@ -571,6 +577,9 @@ table{
     }
 }
 @media screen and (max-width:365px){
+    html{
+        overflow-x: hidden;
+    }
     .home-img{
         width: 90vw;
     }
