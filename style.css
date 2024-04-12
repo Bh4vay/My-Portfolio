@@ -173,23 +173,43 @@ span{
     padding: 10rem 9% 2rem;
 }
 
-.education-item h3 {
-    font-size: 3rem;
-    text-decoration: underline;
-    margin-bottom: 1rem;
-}
-
-.education-item p {
-    font-size: 1.7rem;
-    margin-bottom: 1.5rem;
-}
 
 .education-content{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    column-gap: 7rem;
-    margin-top:6rem ;
+    display: flex;
+    height: 50vh;
+    align-items: center;
     justify-content: center;
+    margin:7rem auto;
+    
+}
+.education-content table{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid white;
+    border-collapse: collapse;
+    overflow: auto;
+
+}
+.education-content table thead{
+    padding: 2rem;
+}
+.education-content table th{
+    border-bottom: 2px solid white;
+    font-size: 3rem;
+    text-decoration: underline;
+    padding: 2rem;
+}
+.education-content table tbody tr{
+    text-align: center;
+}
+table{
+    overflow-x  : scroll;
+}
+.education-content table tbody tr td{
+    font-size: 2.1rem;
+    border: 1px solid white;
 }
 
 .skill-container{
