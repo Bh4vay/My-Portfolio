@@ -20,6 +20,7 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
 }
+
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -28,6 +29,25 @@ section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+/* Add hamburger icon styles */
+/* Hamburger icon styles */
+.hamburger {
+    display: none; /* Hide by default */
+    cursor: pointer;
+    position: absolute;
+    top: 10px; 
+    right: 80px; 
+    z-index: 1000; 
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+
 .header{
     position: fixed;
     top: 0;
@@ -52,10 +72,34 @@ section{
     margin-left: 2.5rem;
     transition: 0.3s;
 }
+/* Add transition effect for smoothness */
+.navbar {
+    transition: all 0.3s ease; 
+}
+
 .navbar a:hover,
 .navbar a.active{
     color: var(--main-color);
 }
+/* Style for active navigation menu */
+.navbar.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    right: 0; /* Align to the right */
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+}
+.navbar.active a {
+    margin: 10px;
+    color: #333; /* Adjust link color in active state */
+}
+
+
 #menu-icon{
     font-size: 3.6rem;
     columns: var(--text-color);
@@ -427,6 +471,10 @@ table{
     }
 }
 @media screen and (max-width:768px) {
+
+    .header{
+        padding: 0;
+    }
     #menu-icon{
         display: block;
     }
