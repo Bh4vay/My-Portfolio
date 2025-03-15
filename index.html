@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhavay Kaushal</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,6 +30,7 @@
 
     <!-- home -->
     <section class="home" id="home">
+        <div id="particles-js"></div>
         <div class="home-content" id="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Bhavay Kaushal</h1>
@@ -62,9 +64,7 @@
                 effective communication, and leadership skills, I aim to leverage technology for positive societal impact.</li>
                 <li>Additionally,
                 I'm delving into web development and computer vision to enhance my skills further.</li>
-                <li>Beyond coding, I find joy in sports and encyclopedia
-                reading.</li>
-                <li>Inspired by Virat Kohli, I'm driven by determination and hard work to make my mark in the tech landscape.</li>
+                <li>Beyond coding, I find joy in watching all kinds of sports.</li>
             </ul>
             <a href="Resume.pdf" class="btn" download>Resume</a>
         </div>
@@ -93,7 +93,7 @@
                         <td>2020</td>
                     </tr>
                     <tr>
-                        <td>9.865 CGPA</td>
+                        <td>9.88 CGPA</td>
                         <td>91.4 %</td>
                         <td>95 %</td>
                     </tr>
@@ -136,6 +136,24 @@
         <h2 class="heading">Latest <span>Projects</span></h2>
         <div class="project-container">
             <div class="project-box" data-tilt data-tilt-glare>
+                <img src="project8.jpg" alt="">
+                <div class="project-layer">
+                    <h4>NoteSpace</h4>
+                    <p>A full stack notes' making website...</p>
+                    <a href="https://note-space-frontend.vercel.app/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-box" data-tilt data-tilt-glare>
+                <img src="project7.jpg" alt="">
+                <div class="project-layer">
+                    <h4>BlogNest</h4>
+                    <p>A full stack blogs' website...</p>
+                    <a href="https://github.com/Bh4vay/BlogNest"><i class='bx bx-link-external'></i></a>
+            
+                </div>
+            
+            </div>
+            <div class="project-box" data-tilt data-tilt-glare>
                 <img src="project1.png" alt="">
                 <div class="project-layer">
                     <h4>BK Clothing</h4>
@@ -152,15 +170,7 @@
             
                 </div>
             </div>
-            <div class="project-box" data-tilt data-tilt-glare>
-                <img src="project3.jpg" alt="">
-                <div class="project-layer">
-                    <h4>Mental Care Website</h4>
-                    <p>Fully Responsive website based on mental health theme...</p>
-                    <a href="https://bh4vay.github.io/WeCare/"><i class='bx bx-link-external'></i></a>
             
-                </div>
-            </div>
             <div class="project-box" data-tilt data-tilt-glare>
                 <img src="project4.png" alt="">
                 <div class="project-layer">
@@ -179,16 +189,7 @@
             
                 </div>
             </div>
-            <div class="project-box" data-tilt data-tilt-glare>
-                <img src="project6.jpg" alt="">
-                <div class="project-layer">
-                    <h4>Computer Vision</h4>
-                    <p>Projects on CV using Python...</p>
-                    <a href="https://github.com/Bh4vay/OpenCV-Intermediate"><i class='bx bx-link-external'></i></a>
             
-                </div>
-            
-        </div>
     </section>
 
     <!-- achievements -->
@@ -197,7 +198,7 @@
     
         <ul class="achievement-list">
             <li><strong style="color: gold;">GOLD</strong>, <strong style="color: silver;">SILVER</strong> medals in various Olympiads of Maths and Science (2013-2020).</li>
-            <li>Top 6 in <strong>YOUNG MASTERMINDS 2020</strong> hosted by Barry O’ Brien and EVERGREEN PUBLICATIONS.</li>
+            <li>Special Mention in <strong>HackNight'25</strong> organized by VIT Chennai.</li>
             <li>Won <strong style="color: gold;">FIRST</strong> prize in <strong>BUREAQUEST ’23 TRIVIA</strong>, organized by Bureau Of Indian Standards, held at SRMIST.</li>
             <li>Trophies and certificates in Different Inter-school Quiz competitions.</li>
             <li>Participation in different Hackathons along with <strong style="color: gold;">GOLD</strong> badges in HackerRank.</li>
@@ -262,6 +263,80 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
+    <script src="scripts/particles.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 150,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle"
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true
+                },
+                "size": {
+                    "value": 3,
+                    "random": true
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            },
+            "interactivity": {
+                "detect_on": "window",  // Change from "canvas" to "window"
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"  // Can be "repulse" or "bubble"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 200,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 200,
+                        "size": 10,
+                        "duration": 2,
+                        "opacity": 0.8
+                    },
+                    "repulse": {
+                        "distance": 100,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+    
     <script src="scripts/tilt.js"></script>
 </body>
 </html>
